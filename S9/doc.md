@@ -1,14 +1,5 @@
 ### Вариант 9. Student Movement Service (Сервис движения студентов)
 
-## API Endpoints
-
-| Метод | Endpoint | Описание |
-|-------|----------|----------|
-| POST | `/movements` | Создать запись о движении |
-| GET | `/movements/{id}` | Получить запись по ID |
-| PUT | `/movements/{id}` | Обновить запись |
-| DELETE | `/movements/{id}` | Мягкое удаление |
-| GET | `/movements?student_id={id}` | Список по студенту |
 
 ## Сущность: MovementRecord
 

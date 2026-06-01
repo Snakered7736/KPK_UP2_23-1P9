@@ -26,7 +26,7 @@ class MovementRecord(BaseModel):
     
     student_id = IntegerField(constraints=[Check('student_id > 0')], null=False)
     movement_type_id = IntegerField(constraints=[Check('movement_type_id > 0')], null=False)
-    movement_date = DateField(constraints=[Check(f"movement_date <= '{datetime.date.today()}'")], null=False)
+    movement_date = DateField(null=False)  # валидация "не в будущем" в коде приложения
     order_number = CharField(max_length=50, constraints=[Check("length(order_number) >= 1")], null=False)
     is_active = BooleanField(default=True, null=False)
 
